@@ -53,10 +53,10 @@ for epoch_idx in range(epoch):
     avg_loss = sum(loss_item) / len(loss_item)
     if avg_loss < best_loss:
         best_loss = avg_loss
-        torch.save(mae.state_dict(), save_path + "\\BestMaskedViTAutoEncoder_chanel_93_4_514.pth")
+        torch.save(mae.state_dict(), save_path + "\\BestMaskedViTAutoEncoder.pth")
 
     end_time = time.time()
     train_time = end_time - start_time
 
-torch.save(mae.state_dict(),save_path+"\\MaskedViTAutoEncoder_chanel_93_4_514.pth")
+torch.save(mae.state_dict(),save_path+"\\MaskedViTAutoEncoder.pth")
 
